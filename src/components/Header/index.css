@@ -1,0 +1,14 @@
+.header {
+  background-color: #efefef;
+  display: flex;
+  padding: 10px;
+}
+
+.item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.active {
+  color: blue;
+}

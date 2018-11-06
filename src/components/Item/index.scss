@@ -1,0 +1,168 @@
+$pink: #FF408E;
+
+.imageContainer {
+  text-align: center;
+  position: relative;
+  max-width: 458px;
+  margin: 0 auto;
+}
+
+.image {
+  display: inline-block;
+}
+
+:local p {
+  font-size: 14px;
+}
+
+.reviews {
+  font-size: 14px;
+  color: #9B9B9B;
+}
+
+
+
+.heading {
+  text-align: center;
+
+  .typeText {
+    font-size: 12px;
+  }
+
+  h1 {
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    line-height: 20px
+  }
+
+  @media (min-width: 992px) {
+    text-align: left;
+    h1, h2 {
+      font-size: 24px;
+    }
+    .typeText {
+      font-size: 14px;
+    }
+  }
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ratingContainer {
+  span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.subHeading {
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.selectedSubscription {
+  p {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  img {
+    float: left;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.pickerContainer {
+  margin-top: 30px;
+}
+
+.picker {
+  cursor: pointer;
+  min-height: 50px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid;
+  img {
+    height: 40px;
+    width: 40px;
+    float: left;
+  }
+}
+
+.button {
+  border: none;
+  width: 100%;
+  background-color: $pink;
+  border-radius: 0px;
+  font-weight: 200;
+  font-size: 16px;
+  padding: 12px 0px;
+  color: white;
+  @media (max-width: 768px) {
+    margin-top: 30px;
+  }
+}
+
+
+.description {
+  margin-top: 30px;
+  h3 {
+    font-size: 18px;
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+.showMore {
+  color: $pink;
+  cursor: pointer;
+}
+
+.tabs {
+  margin-top: 30px;
+  ul {
+    border-bottom-color: #5f5f5f;
+    li {
+      width: 50%;
+      a {
+        text-align: center;
+        color: $pink;
+        background-color: white;
+        border-radius: 0px;
+        border: 1px solid #efefef;
+        border-bottom-color: #5f5f5f;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+:global .nav-tabs>li.active>a {
+  border-color: #5f5f5f;
+  border-bottom-color: transparent;
+}
+
+.zoomIcon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+

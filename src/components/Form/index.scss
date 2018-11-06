@@ -1,0 +1,103 @@
+$pink: #FF408E;
+
+.button {
+  border: none;
+  width: 100%;
+  background-color: $pink;
+  border-radius: 0px;
+  font-weight: 200;
+  font-size: 16px;
+  padding: 12px 0px;
+  color: white;
+  margin-top: 10px;
+  position: relative;
+  img {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.actionsContainer {
+  margin-top: 10px;
+}
+
+.error {
+  color: #FD6464;
+  position: absolute;
+}
+
+.shippingForm {
+  h1 {
+    text-align: center;
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}
+
+.discounts {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.backButton {
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 25px;
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+}
+
+.checkbox {
+  margin-top: 10px;
+  position: relative;
+  float:left;
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $pink;
+    border-radius: 4px;
+  }
+  label:after {
+    content: '';
+    width: 10px;
+    height: 7px;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    border: 3px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  label:hover::after {
+    opacity: 0.3;
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+  }
+  input[type=checkbox]:checked + label:after {
+    opacity: 1;
+  }
+  span {
+    padding-left: 20px;
+  }
+}
+
+:global select.form-control {
+  border-radius: 0px;
+  -webkit-appearance: none;
+}
