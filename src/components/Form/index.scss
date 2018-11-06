@@ -25,9 +25,11 @@ $pink: #FF408E;
   margin-top: 10px;
 }
 
-.error {
+.errorText {
   color: #FD6464;
   position: absolute;
+  bottom: -20px;
+  left: 0px;
 }
 
 .shippingForm {

@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 import { FormControl } from 'react-bootstrap'
+import styles from './index.scss'
 
 const labelStyles = {
-  marginTop: '10px',
+  marginTop: '15px',
   width: '100%',
   boxSizing: 'border-box',
   display: 'inline-block',
@@ -121,7 +122,7 @@ class Select extends React.Component {
         >
           {this.props.children}
         </FormControl>
-        {errorText && <span style={{ color: '#FD6464' }}>{errorText}</span>}
+        {errorText && <span className={styles.errorText}>{errorText}</span>}
       </label>
     )
   }

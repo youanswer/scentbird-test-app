@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import styles from './index.scss'
 
 const labelStyles = {
-  marginTop: '10px',
+  marginTop: '15px',
   width: '100%',
   boxSizing: 'border-box',
   display: 'inline-block',
@@ -120,7 +121,7 @@ class FloatingLabel extends React.Component {
           type={this.props.type}
           disabled={this.props.disabled}
         />
-        {errorText && <span style={{ color: '#FD6464' }}>{errorText}</span>}
+        {errorText && <span className={styles.errorText}>{errorText}</span>}
       </label>
     )
   }
